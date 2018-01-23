@@ -114,7 +114,7 @@ FB_SECRET = json.loads(
     open('%s/fb_client_secret.json' % BASEDIR, 'r')
     .read())['web']['app_secret']
 ```
-#####Changing path to upload folder:
+##### Changing path to upload folder:
 ```
 UPLOAD_FOLDER = os.path.abspath('%s/../app/static/images/uploaded/' % BASEDIR)
 ```
