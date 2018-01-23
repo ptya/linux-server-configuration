@@ -194,10 +194,10 @@ ssh grader@35.156.112.237 -p 2200 -i ~/.ssh/grader-linux-project
 Open [this url](http://ec2-35-156-112-237.eu-central-1.compute.amazonaws.com). Google Chrome recommended for best experience.
 
 ## References
-[How To Set Up Apache Virtual Hosts on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-ubuntu-16-04)
-[Using Flask with mod_wsgi](http://flask.pocoo.org/docs/0.12/deploying/mod_wsgi/)
-[Using virtualenv](https://virtualenv.pypa.io/en/stable/userguide/#usage)
-[Creating user, database and adding access on PostgreSQL](https://medium.com/coding-blocks/creating-user-database-and-adding-access-on-postgresql-8bfcd2f4a91e)
+- [How To Set Up Apache Virtual Hosts on Ubuntu 16.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-ubuntu-16-04)
+- [Using Flask with mod_wsgi](http://flask.pocoo.org/docs/0.12/deploying/mod_wsgi/)
+- [Using virtualenv](https://virtualenv.pypa.io/en/stable/userguide/#usage)
+- [Creating user, database and adding access on PostgreSQL](https://medium.com/coding-blocks/creating-user-database-and-adding-access-on-postgresql-8bfcd2f4a91e)
 
 ## License
 Copyright (c) 2018 Péter Szabó. All rights reserved.
