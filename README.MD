@@ -15,6 +15,7 @@ Securing the server from a number of attack vectors, installing and configuring 
 - All currently installed packages have been updated.
 - SSH port changed from default 22 to 2200 and Lightsail firewall configured accordingly.
 - Uncomplicated Firewall (UFW) configured to only allow incoming connections for SSH (port 2200), HTTP (port 80), and NTP (port 123).
+- unattended-upgrades configured to automatically install security updates and upgrade packages.
 
 ### User Management
 - Created user `grader` with sudoer access.
@@ -33,6 +34,7 @@ Securing the server from a number of attack vectors, installing and configuring 
 - [pip 9.0.1](https://pip.pypa.io/en/stable/)
 - [Virtualenv 15.1.0](https://virtualenv.pypa.io/)
 - [Flask 0.12.2](http://flask.pocoo.org/)
+- [unattended-upgrades 0.90](https://wiki.debian.org/UnattendedUpgrades)
 
 ## Application Configuration
 An Apache virtual host is setup to listen on port 80.
@@ -198,6 +200,7 @@ Open [this url](http://ec2-35-156-112-237.eu-central-1.compute.amazonaws.com). G
 - [Using Flask with mod_wsgi](http://flask.pocoo.org/docs/0.12/deploying/mod_wsgi/)
 - [Using virtualenv](https://virtualenv.pypa.io/en/stable/userguide/#usage)
 - [Creating user, database and adding access on PostgreSQL](https://medium.com/coding-blocks/creating-user-database-and-adding-access-on-postgresql-8bfcd2f4a91e)
+- [AutomaticSecurityUpdates](https://help.ubuntu.com/community/AutomaticSecurityUpdates)
 
 ## License
 Copyright (c) 2018 Péter Szabó. All rights reserved.
