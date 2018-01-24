@@ -16,6 +16,7 @@ Securing the server from a number of attack vectors, installing and configuring 
 - SSH port changed from default 22 to 2200 and Lightsail firewall configured accordingly.
 - Uncomplicated Firewall (UFW) configured to only allow incoming connections for SSH (port 2200), HTTP (port 80), and NTP (port 123).
 - unattended-upgrades configured to automatically install security updates and upgrade packages.
+- Fail2ban installed and configured to ban IP's for 30 mins with more than 3 failed authentication attempts within 5 minutes.
 
 ### User Management
 - Created user `grader` with sudoer access.
@@ -26,6 +27,9 @@ Securing the server from a number of attack vectors, installing and configuring 
 - Remote connections are disabled.
 - Database `catalog` created and restricted to database user `catalog`.
 
+### Server Monitoring
+- Munin has been setup and configured to monitor the server. It can be accessed via [this url](http://ec2-35-156-112-237.eu-central-1.compute.amazonaws.com/munin).
+
 ### Installed packages
 - [Python 3.5.2](https://www.python.org)
 - [Apache 2.4.18](https://httpd.apache.org/)
@@ -35,6 +39,8 @@ Securing the server from a number of attack vectors, installing and configuring 
 - [Virtualenv 15.1.0](https://virtualenv.pypa.io/)
 - [Flask 0.12.2](http://flask.pocoo.org/)
 - [unattended-upgrades 0.90](https://wiki.debian.org/UnattendedUpgrades)
+- [Fail2ban 0.9.3-1](http://www.fail2ban.org/wiki/index.php/Main_Page)
+- [Munin 2.0.25](http://munin-monitoring.org/)
 
 ## Application Configuration
 An Apache virtual host is setup to listen on port 80.
@@ -201,6 +207,8 @@ Open [this url](http://ec2-35-156-112-237.eu-central-1.compute.amazonaws.com). G
 - [Using virtualenv](https://virtualenv.pypa.io/en/stable/userguide/#usage)
 - [Creating user, database and adding access on PostgreSQL](https://medium.com/coding-blocks/creating-user-database-and-adding-access-on-postgresql-8bfcd2f4a91e)
 - [AutomaticSecurityUpdates](https://help.ubuntu.com/community/AutomaticSecurityUpdates)
+- [How To Protect SSH with Fail2Ban on Ubuntu 14.04](https://www.digitalocean.com/community/tutorials/how-to-protect-ssh-with-fail2ban-on-ubuntu-14-04)
+- [How To Install Munin on an Ubuntu VPS](https://www.digitalocean.com/community/tutorials/how-to-install-munin-on-an-ubuntu-vps)
 
 ## License
 Copyright (c) 2018 Péter Szabó. All rights reserved.
