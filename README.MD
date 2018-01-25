@@ -8,7 +8,7 @@ Securing the server from a number of attack vectors, installing and configuring 
 - Public IP: 35.156.112.237
 - SSH Port: 2200
 - URL: [http://ec2-35-156-112-237.eu-central-1.compute.amazonaws.com](http://ec2-35-156-112-237.eu-central-1.compute.amazonaws.com)
-- Deployed app: [Item Catalog](https://github.com/ptya/Item_catalog_applicaton)
+- Deployed app: [Item Catalog](https://github.com/ptya/item-catalog-applicaton-udacity-fsnd)
 
 ## Server Configuration
 ### Server Security
